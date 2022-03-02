@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>report.html</title>
+    <p><a href="index.html">Programação Web</a> | <a href="report.html">A Internet e a Web</a> | <a
+            href="../index.html">Laboratórios PW</a></p>
+</head>
+
+<body bgcolor="palegoldenrod">
+
+    <h1>A Internet e a Web</h1>
+
+    <h2><u>Conhecer a Internet</u></h2>
+    <h3><i>Endereços IP:</i></h3>
+
+    <ol>
+        <li> IP do PC: 85.138.228.14 </li>
+        <p></p>
+        <img src="images/meuIP.png">
+        <p></p>
+        <li>IP do telemóvel: 46.50.7.24 </li>
+        <p></p>
+        <img src="images/meuIP_telemovel.png">
+        <p></p>
+        <li>IP do endereço do servidor Web onde está alojada a página no Heroku: 34.241.115.67 </li>
+        <p>Localização da app no mapa:</p>
+        <img src="images/nuvem.png">
+    </ol>
+
+
+    <h2><u>Percurso</u></h2>
+    <h3><i>Pacotes IP:</h3></i>
+
+    <ol>
+        <li>Depois de fazer o ping via <i>command line</i> podemos ver a seguinte info, obtida pelo teste executado:
+        </li>
+        <p></p>
+        <img src="images/ping_nuvem.png">
+        <p>Podemos verificar que foram enviados 4 pacotes, sendo que obtivemos uma percentagem de 100% de <i>loss</i>
+            (perda) uma vez que nenhum deles foi recebido. O motivo foi por <i>time out</i>.</p>
+        <p></p>
+        <li>Depois de usar a tool GeoTraceroute, obtive a seguinte informação:</li>
+        <ol>
+            <p></p>
+            <li>Origem: Portugal Pior velho | Distância: 0kms </li>
+            <img src="images/portugal_bandeira.png">
+            <li>Portugal Lisboa | Distância: 8km</li>
+            <img src="images/portugal_bandeira.png">
+            <li>Destino: DE - Frankfurt | Distância: 1879 km</li>
+            <img src="images/destino_DE.png">
+        </ol>
+        <p></p>
+        <li>Oirgem destino, visualizado através de satélite, pela plataforma GeoTraceroute:</li>
+        <p></p>
+        <img src="images/geotraceroute.png">
+    </ol>
+
+    <h2><u>HTTP</u></h2>
+    <h3><i>código fonte:</i></h3>
+
+    <img src="images/codigo_fonte.png">
+
+    <h2><u>Inspect</u></h2>
+    <h3><i>browser developer tool</i></h3>
+
+
+    <ul>
+        <li>barra network:</li>
+        <p></p>
+        <img src="images/cliente-servidor.png">
+        <p>Nitidamente, temos a percepção da arquitetura cliente-servidor. Mostra o tempo em ms da duração desde do
+            pedido até há recepção do mesmo, no cliente (meu portátil neste caso concreto). Também, após várias
+            tentativas, percebemos que o tempo muda constantemente a cada pedido, o que é normal.</p>
+        <p></p>
+        <li>ficheiros:</li>
+        <ul>
+            <li>1.1kb</li>
+        </ul>
+        <p></p>
+        <li>tipo de ficheiros, timings de espera e de descargarespectivamente em seguida:</li>
+        <ul>
+            <li>document</li>
+            <li>1.71ms</li>
+            <li>1.40ms</li>
+            <p></p>
+        </ul>
+        <li>preview, headers, timing respectivamente em seguida:</li>
+        <ul>
+            <li>o Preview mostra a página criada, sem a imagem colocada no fim, uma vez que esta está alocada do lado do
+                cliente. </li>
+            <li>Mostra-nos o get (HTTP-protócolo) </li>
+            <li>É o server timing, isto é, tempo de resposta do servidor a um pedido do cliente.</li>
+        </ul>
+    </ul>
+</body>
+
+</html>
