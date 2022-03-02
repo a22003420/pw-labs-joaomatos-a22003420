@@ -1,4 +1,8 @@
-# pw-lab1
+# pw-lab2
 
-[link 1](https://pw-lab1htmlreport.herokuapp.com/report.html)
-[link 2](https://pw-lab1htmlreport.herokuapp.com/index.html)
+* João Matos; a22003420
+* Cadeira: Programação Web
+
+[link Enunciado](https://github.com/ULHT-PW/pw-lab2l)
+[link Enunciado](https://pw-lab1htmlreport.herokuapp.com/)
+
