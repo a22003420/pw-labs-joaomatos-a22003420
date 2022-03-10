@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
+    <header>
     <meta charset="UTF-8">
     <meta name="author" content="João Matos">
     <meta name="keywords" content="palavras chave">
@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/Portugal.ico"/>
     <title>Lisboa</title>
     <h3>Lisboa</h3>
-    </head>
+    </header>
 
     <body style="background-color:peachpuff">
     <img src="images/Lisboa.png">
@@ -34,7 +34,7 @@
         <p>Info</p>
         <p>Nome: <input type="text" name="nome" autocomplete="on" required autofocus></p>
         <p>Apelido: <input type="text" name="apelido" autocomplete="on" required autofocus></p>
-        <p>Telefone: <input type="text" name="telefone" required autofocus></p>
+        <p>Telefone: <input type="text" name="telefone" maxlength="12" size="12" required autofocus> </p>
         <p>Coloca uma ou várias fotografias suas <input type="file" name="img" multiple></p>
         <input type="image" src="images/botão_submit.jpg" alt="Submit" width="48" height="48" required autofocus>
         
@@ -45,16 +45,17 @@
                         
 
                         <label>
-                            <input type="radio" name="Qual o monumento que mais gostou de visitar" value="Torre de Belém">Torre de Belém  
-                            <input type="radio" name="Qual o monumento que mais gostou  de visitar" value="Mosteiro dos Jerónimos">Mosteiro dos Jerónimos                       
-                            <input type="radio" name="Qual o monumento que mais gostou  de visitar" value="Elevador de Santa Justa ">Elevador de Santa Justa                 
-                            <input type="radio" name="Qual o monumento que mais gostou  de visitar" value="Oceanário de Lisboa">Oceanário de Lisboa                           
+                            <h4>Qual o monumento mais antigo</h4> 
+                            <input type="radio" name="answer 1" value="Torre de Belém">Torre de Belém  
+                            <input type="radio" name="answer 2" value="Mosteiro dos Jerónimos">Mosteiro dos Jerónimos                       
+                            <input type="radio" name="answer 3" value="Elevador de Santa Justa ">Elevador de Santa Justa                 
+                            <input type="radio" name="answer 4" value="Padrão dos Descobrimentos ">Padrão dos Descobrimentos                          
                             <br>
                             <br>
                         </label>
 
 
-                        <h4>Define Lisboa em duas Palavras:&#128512;</h4>                       
+                        <h4>Defina Lisboa em duas Palavras:&#128512;</h4>                       
                         <label for="P1">Palavra1</label><br>
                         <input type="text" id="P1" name="P1" size="10"><br>
                         <label for="P2">Palavra2</label><br>
@@ -65,7 +66,7 @@
                         <!test>
 
                         <br>
-                        <h4>Selecione a opção que acha uma melhor deslocação para conhecer a nossa cidade</h4>
+                        <h4>Selecione a opção que é uma melhor deslocação para conhecer a nossa cidade</h4>
                         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bicicleta">
                         <label for="vehicle1">Bicicleta</label><br>
                         <input type="checkbox" id="vehicle2" name="vehicle2" value="Carro">
@@ -84,45 +85,47 @@
 
                         <br>
                         
-                        <label for="favcolor">De acordo, com os clubes de Lisboa, Sporting, Benfica, Belenenses entre outros, qual a sua cor favorita?</label>
+                        <h4><label for="favcolor">De acordo, com os clubes de Lisboa, Sporting, Benfica, Belenenses entre outros, qual a sua cor favorita?</label></h4>
                         <input type="color" id="favcolor" name="favcolor" value="#ff0000">
                         
                         <br><br>
                         
-                        <label for="quantity">Como avalia os restaurantes da nossa cidade(entre 1 and 5):</label>
+                        <h4><label for="quantity">Como avalia os restaurantes da nossa cidade(entre 1 and 5):</label></h4>
                         <input type="number" id="quantity" name="quantity" min="1" max="5">
                         
                         <br>
                         <br>
+                        <h4><label for="vol">Como avalia os hospitalidade na nossa cidade(entre 1 a 10):</label></h4>
                         <label for="vol">Como avalia os hospitalidade na nossa cidade(entre 1 a 10):</label>
                         <input type="range" id="vol" name="vol" min="0" max="10">
                         
                         <br>
                         <br>
 
-                        <label for="cars">Choose a car:</label>
-                        <select id="cars" name="cars">
-                                <option value="volvo">Volvo</option>
-                                <option value="saab">Saab</option>
-                                <option value="fiat" selected>Fiat</option>
-                                <option value="audi">Audi</option>
+                        <h4><label for="food">Como se chamam os pastéis tão conhecidos de Lisboa</label></h4>
+                        <select id="food" name="food">
+                                <option value="Pastéis de Santa Justa">Pastéis de Santa Justa</option>
+                                <option value="Pastéis do Rossio">Pastéis do Rossio</option>
+                                <option value="Pastéis de Belém">Pastéis de Belém</option>
+                                <option value="Pastéis da Liberdade" selected>Pastéis da Liberdade</option>
                         </select>
 
                         <br>
                         <br>
 
-                        <input list="browsers" name="browser">
-                        <datalist id="browsers">
-                                <option value="Internet Explorer">
-                                <option value="Firefox">
-                                <option value="Chrome">
-                                <option value="Opera">
-                                <option value="Safari">
+                        <h4><label for="avenida">Qual a avenida mais famosa e mais elegante de Lisboa, onde se encontram inúmeras lojas bastante conhecidas</label></h4>
+                        <input list="avenida" name="avenida">
+                        <datalist id="avenida">
+                                <option value="Avenida da Liberdade">
+                                <option value="Avenida Afonso III">
+                                <option value="Avenida Afonso Costa">
+                                <option value="Avenida Almirante Gago Coutinho">
+                                <option value="Avenida Álvares Cabral">
                         </datalist>
                         <br> 
                         <br>
 
-                        <p>Coloque o seu telefone para questões de marketing futuro, se tiver interesse:</p>
+                        <h4>Coloque o seu telefone para questões de marketing futuro, se tiver interesse:</h4>
                         <input type="text" id="telefone" name="telefone" placeholder="Número de telefone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br><br>
 
                         <textarea name="message" rows="10" cols="30">Deixe aqui a sua mensagem</textarea>
