@@ -1,0 +1,47 @@
+*{
+    font-family: sans-serif;
+}
+
+.pinta{
+    font-family: fantasy;
+}
+
+#unico {font-family: fantasy;}
+
+[target="orange_"]{
+    color: rgb(124, 10, 10);
+}
+
+div :hover{
+    background-color: brown;
+}
+
+p::first-letter {
+    color: orange;
+    font-size: xx-large;
+  }
+  
+  p::first-line {
+    color: blue;
+    font-variant: small-caps;
+  }
+
+  * {font-family: 'Roboto', sans-serif;}
+    
+  div p {
+    background-color: rgb(255, 0, 234);
+  }
+
+  div > p {
+    background-color: orange;
+  }
+
+  div ~ p {
+    background-color: rgb(255, 0, 234);
+  }
+
+  div + p {
+    background-color: rgb(30, 255, 0);
+  }
+
+  div,p{ color: rgb(255, 217, 0); }
