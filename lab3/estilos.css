@@ -1,5 +1,5 @@
-*{
-    font-family: sans-serif;
+* {
+    font-family: 'Syne Mono', monospace;
 }
 
 .pinta{
@@ -8,70 +8,83 @@
 
 #unico {font-family: fantasy;}
 
-[target="color_"]{
+#color_{
     color: orange;
 }
+#color_font_1{
+    color: red;
+    font-size: larger;
+}
 
-[target="color_background"]{
+#color_background{
     background-color: gray;
 }
 
-[target="color_background_1"]{
+#color_background_1{
     background-color: whitesmoke;
 }
 
-[target="color_background_2"]{
+#color_background_2{
     background-color: yellowgreen;
 }
 
+#color_background_3{
+    background-color: yellowgreen;
+    font-size: large;
+}
 
 
-h1,h2{
+h1,h2,legend{
     background-color: greenyellow;
+    color:blueviolet
    }
 
-div :hover{
+a:hover{
     background-color: blue;
+}
+
+#conteudo_poema:hover{
+    background-color: palevioletred;
+}
+
+a:link {
+    color: red;
+  }
+  
+  
+a:visited {
+    color: green;
+}
+  
+
+a:active {
+    color: hotpink;
+}
+
+h3::first-letter {
+    color: orange;
+    font-size: xx-large;
+}
+
+
+h1,h3~p::first-letter {
+    color: orange;
+    font-size: xx-large;
+}
+  
+h1,h3, h3~p::first-line {
+    color:blueviolet;
+    font-variant: small-caps;
 }
 
 p#conteudo {
     
     font-size:small;
     font-variant: small-caps;
-    background-color:white; 
-}
-
-p::first-letter {
-    color: orange;
-    font-size: xx-large;
+    background-color:yellow; 
+    color: blue;
 }
   
-p::first-line {
-    color: blue;
-    font-variant: small-caps;
-}
-
-* {font-family: 'Roboto', sans-serif;}
-    
-div p {
-    background-color: rgb(0, 255, 85);
-}
-
-div > p {
-    background-color: orange;
-}
-
-div ~ p {
-    background-color: rgb(255, 0, 234);
-}
-
-div + p {
-    background-color: rgb(30, 255, 0);
-}
-
-div,p{ color: red; }
-
- 
 
 .footerClass{
     text-align: right;
