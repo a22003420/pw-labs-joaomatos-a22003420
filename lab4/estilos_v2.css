@@ -1,0 +1,83 @@
+    *{  box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;       
+        /*background-image: url(https://media.giphy.com/media/rSYXB6USwzNJK/giphy.gif);
+        background-size: contain;*/
+       
+    }
+
+.title{
+    height: 120px;
+    background-color: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.capitais {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+    align-items:space-around;
+    background-color:rgb(238, 248, 248);
+    padding:50px;
+    
+}
+
+.capitais > div {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px blueviolet;
+    margin: 10px;
+    
+}
+
+.capitais img {
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+}
+
+.capitais div div:last-child {
+    width:150px;
+    background-color:whitesmoke;
+    padding:20px;
+    border-radius:0 20px 20px 0;
+    display:flex;
+    justify-content: center;
+    align-items:center;     
+}
+
+nav{
+    display: flex;
+}
+
+nav a{
+    padding: 20px;
+    background-color: whitesmoke;
+    margin: 2px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 2px 3px 3px lightgrey;
+    border-radius: 5px;
+   
+    }
+
+.menu a:last-child {
+    margin-left: auto;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 10px;
+    }
+
+a{
+    padding: 20px;
+    text-decoration: none;
+    color:blueviolet;
+}
+
+nav a:hover{
+    background-color:#efefef;
+    font-weight: bold;
+}
+
