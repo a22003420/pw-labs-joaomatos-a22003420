@@ -43,7 +43,7 @@ a:hover{
     background-color: blue;
 }
 
-#conteudo_poema:hover{
+.conteudo_poema:hover{
     background-color: palevioletred;
 }
 
