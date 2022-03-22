@@ -1,7 +1,10 @@
     *{  box-sizing: border-box;
         font-family: 'Roboto', sans-serif;       
-        /*background-image: url(https://media.giphy.com/media/rSYXB6USwzNJK/giphy.gif);*/
-        /*background-size: contain;*/   
+        /*background-image: url("HRbZ.gif");*/
+        /*background-color: whitesmoke;*/
+    
+    
+    
     }
 
 .title{
@@ -13,6 +16,26 @@
     font-size: 2rem;
 }
 
+.dicas{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+    align-items:space-around;
+    background-color:rgb(238, 248, 248);
+    padding: 10px 20px;
+
+}
+
+.dicas > div {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgb(43, 226, 211);
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+  
 .capitais {
     display:flex;
     flex-flow:row wrap;
@@ -37,7 +60,31 @@
     height: 100%;
 }
 
+
+[data-icon]:before {
+    font-family: icons;
+    content: attr(data-icon);
+    speak: none;
+  }
+
+.dicas i {
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+}
+
+
 .capitais div div:last-child {
+    width:150px;
+    background-color:whitesmoke;
+    padding:20px;
+    border-radius:0 20px 20px 0;
+    display:flex;
+    justify-content:center;
+    align-items:right;     
+}
+
+
+.dicas div div:last-child {
     width:150px;
     background-color:whitesmoke;
     padding:20px;
@@ -80,3 +127,31 @@ nav a:hover{
     font-weight: bold;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    width:100%;
+    background-color:whitesmoke;
+    box-shadow: 15px 15px 15px blueviolet;
+  }
+  .wrapper > div img {
+    max-width:100%;
+    }
+
+    div.relative {
+        position: relative;
+        top: 20px;    left: 100px;
+        width: 400px; height: 400px;
+        padding: 5px;
+        background-color: salmon;
+      }
+      
+    div.absolute {
+        position: absolute;
+        bottom: 0;   right: 20px;
+        width: 350px;   height: 150px;
+        padding: 5px;
+        background-color: #cae8ca;
+    }
