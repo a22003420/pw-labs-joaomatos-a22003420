@@ -2,3 +2,10 @@
     font-family: 'Syne Mono', monospace;
     background-color: yellow;
 }
+
+.footerClass{
+    text-align: right;
+    color: blueviolet;
+    
+}
+
