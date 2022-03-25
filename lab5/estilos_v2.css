@@ -1,0 +1,251 @@
+    *{  box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;       
+        /*background-image: url("HRbZ.gif");*/
+        /*background-color: white;*/ 
+    }
+
+.title{
+    height: 120px;
+    background-color: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.dicas{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+    align-items:space-around;
+    background-color:rgb(238, 248, 248);
+    padding: 10px 20px;
+
+}
+
+.dicas > div {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgb(43, 226, 211);
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+  
+.capitais {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+    align-items:space-around;
+    background-color:rgb(238, 248, 248);
+    padding:50px;
+    
+}
+
+.capitais > div {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px blueviolet;
+    margin: 10px;
+    
+}
+
+.capitais img {
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+}
+
+
+[data-icon]:before {
+    font-family: icons;
+    content: attr(data-icon);
+    speak: none;
+  }
+
+.dicas i {
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+}
+
+
+.capitais div div:last-child {
+    width:150px;
+    background-color:whitesmoke;
+    padding:20px;
+    border-radius:0 20px 20px 0;
+    display:flex;
+    justify-content:center;
+    align-items:right;     
+}
+
+
+.dicas div div:last-child {
+    width:150px;
+    background-color:whitesmoke;
+    padding:20px;
+    border-radius:0 20px 20px 0;
+    display:flex;
+    justify-content: center;
+    align-items:center;     
+}
+
+nav{
+    display: flex;
+}
+
+nav a{
+    padding: 20px;
+    background-color: whitesmoke;
+    margin: 2px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 2px 3px 3px lightgrey;
+    border-radius: 5px;
+   
+    }
+
+.menu a:last-child {
+    margin-left: auto;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 10px;
+    }
+
+a{
+    padding: 20px;
+    text-decoration: none;
+    color:blueviolet;
+}
+
+nav a:hover{
+    background-color:#efefef;
+    font-weight: bold;
+}
+   
+
+    .center {
+        position: relative;
+        top: 50%;
+        width: 100%;
+        text-align:center;
+        font-size: 18px;
+        color:white;
+        font-style:bold;
+        background-color: rgb(255, 255, 255,0.4);
+        padding: 10px;
+    }
+
+    
+
+    .tokio{
+        grid-area: tokio;
+        opacity:0.7;
+        background-image: url("../lab4/images/tokio.png");
+        min-width:100%;
+        height:100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        }
+
+    .londres{
+        grid-area: londres;
+        opacity:0.7;
+        background-image: url("../lab4/images/londres-1050x599.jpg");
+        min-width:100%;
+        height:100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .porto{
+        grid-area: porto;
+        opacity:0.7;
+        background-image: url("../lab4/images/porto.jpg");
+        min-width:100%;
+        height:100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .paris{
+        grid-area: paris;
+        opacity:0.7;
+        background-image: url("../lab4/images/9c.jpg");
+        min-width:100%;
+        height:100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .vegas{
+        grid-area: vegas;
+        opacity:0.7;
+        background-image: url("../lab4/images/88.jpg");
+        min-width:100%;
+        height:100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .miami{
+        grid-area: miami;
+        opacity:0.7;
+        background-image: url("../lab4/images/destinations-miami-banner-mobile-1024x553.jpg");
+        min-width:100%;
+        height:100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+
+
+    .grid-container {
+        display: grid;
+        width: 100vw;
+        height: 100vh;      
+        grid-template-areas:    'tokio miami londres'
+                                'paris vegas londres '
+                                'porto porto londres';
+        
+        
+        gap: 20px;
+        background-color:white;
+        padding: 10px;  
+    }
+
+
+      /* Para telemóvel */
+    @media only screen and (min-width: 900px) {
+        .grid-container { 
+        display: grid;
+        width: 100vw;
+        height: 100vh;      
+        grid-template-areas:    'tokio miami'
+                                'paris vegas'
+                                'vegas porto'
+                                'londres londres';
+
+        gap: 20px;
+        background-color:blueviolet;
+        padding: 10px;     
+        }
+      }
+    /* Para PC */
+
+    @media only screen and (min-width: 901px) {
+        .grid-container { 
+            display: grid;
+        width: 100vw;
+        height: 100vh;      
+        grid-template-areas:    'tokio miami londres'
+                                'paris vegas londres '
+                                'porto porto londres';
+
+        gap: 20px;
+        background-color:white;
+        padding: 10px;
+        }
+      }
+
