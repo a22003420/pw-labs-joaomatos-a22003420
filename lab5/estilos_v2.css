@@ -4,13 +4,37 @@
         /*background-color: white;*/ 
     }
 
+    .fotos{
+        font-size: 2rem;
+        text-align:center;
+        color: blueviolet;
+    }
+
 .title{
-    height: 120px;
-    background-color: violet;
+    
+    color:black;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 2rem;      
+    height: 40vh;
+    background-image: url("../lab5/images/fundo1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.menu{
+    background-color:whitesmoke;
+    position: sticky;
+    top: 0;
+  }
+
+  nav div:first-child {
+    display: grid;
+    grid-template-rows: 10% 1fr;
+    grid-template-columns: 1fr;
 }
 
 .dicas{
@@ -102,13 +126,13 @@ nav a{
     text-decoration: none;
     color: black;
     box-shadow: 2px 3px 3px lightgrey;
-    border-radius: 5px;
-   
+    border-radius: 5px;   
     }
 
 .menu a:last-child {
     margin-left: auto;
     background-color: dodgerblue;
+    box-shadow: 5px 5px 15px dodgerblue;
     color: white;
     border-radius: 10px;
     }
