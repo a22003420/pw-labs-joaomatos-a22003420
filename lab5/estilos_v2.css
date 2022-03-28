@@ -4,11 +4,21 @@
         /*background-color: white;*/ 
     }
 
-    .fotos{
-        font-size: 2rem;
-        text-align:center;
-        color: blueviolet;
+    body h1{
+        color:greenyellow;
     }
+
+    h1 span{
+        color:black;
+    }
+
+    .fotos{
+        font-size: 1rem;
+        text-align:left;
+        
+    }
+
+    
 
 .title{
     
@@ -239,6 +249,80 @@ nav a:hover{
         padding: 10px;  
     }
 
+    .grid-container2 {
+        display: grid;
+        width: 80vw;
+        height: 100vh;      
+        grid-template-areas:    'animacao1 animacao2'
+                                'animacao3 animacao4';
+                                
+        
+        
+        gap: 20px;
+        background-color:white;
+        padding: 10px;  
+    }
+
+    .animacao1{
+        grid-area: animacao1;
+        opacity:0.7;
+        background-image: url("https://source.unsplash.com/random");
+        width:70%;
+        height:90%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border-radius: 50%; 
+        animation-name: roda;  
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; 
+    }
+
+    .animacao2{
+        grid-area: animacao2;
+        opacity:0.7;
+        background-image: url("https://source.unsplash.com/random");
+        width:70%;
+        height:90%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border-radius: 50%;  
+        animation-name: roda;  
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; 
+    }
+
+    .animacao3{
+        grid-area: animacao3;
+        opacity:0.7;
+        background-image: url("https://source.unsplash.com/random");
+        width:70%;
+        height:90%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border-radius: 50%;  
+        animation-name: roda;  
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; 
+    }
+
+    .animacao4{
+        grid-area: animacao4;
+        opacity:0.7;
+        background-image: url("https://source.unsplash.com/random");
+        width:70%;
+        height:90%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border-radius: 50%;  
+        animation-name: roda;  
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; 
+    }
+
 
       /* Para telemóvel */
     @media only screen and (min-width: 900px) {
@@ -271,5 +355,29 @@ nav a:hover{
         background-color:white;
         padding: 10px;
         }
+      }
+
+      .parallax {
+        
+        background-image: url("../lab5/images/marek-piwnicki-BLRIAyXloSU-unsplash.jpg");
+        min-height: 200px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      
+      @keyframes roda {
+        from {transform: rotate(0deg);}
+        to {transform: rotate(360deg);}
+      }
+      
+      
+     
+      @keyframes roda-encolhe {
+        0% {transform: rotate(0deg); width: 200px;}
+        50% {transform: rotate(180deg);  width: 100px;}
+        100% {transform: rotate(360deg);  width: 200px;}
       }
 

@@ -5,7 +5,49 @@
 
 .footerClass{
     text-align: right;
-    color: blueviolet;
+    color: blue;
+    font-size: 1.5em;
     
+}
+
+.title{
+    
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;      
+    height: 40vh;
+    background-image: url("../pw-labs-joaomatos-a22003420/images/image1.JPG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.title2{
+    
+    color:whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;      
+    height: 25vh;
+    background-image: url("../pw-labs-joaomatos-a22003420/images/image2.JPG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.title3{
+    
+    color:blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;      
+    height: 15vh;
+ 
 }
 
