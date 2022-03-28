@@ -251,7 +251,7 @@ nav a:hover{
 
     .grid-container2 {
         display: grid;
-        width: 80vw;
+        width: 65vw;
         height: 100vh;      
         grid-template-areas:    'animacao1 animacao2'
                                 'animacao3 animacao4';
@@ -272,7 +272,8 @@ nav a:hover{
         background-repeat: no-repeat;
         background-size: 100% 100%;
         border-radius: 50%; 
-        animation-name: roda;  
+        animation-name: roda;
+        animation-name: roda-encolhe; 
         animation-duration: 2s;
         animation-iteration-count: infinite;
         animation-timing-function: linear; 
@@ -287,7 +288,8 @@ nav a:hover{
         background-repeat: no-repeat;
         background-size: 100% 100%;
         border-radius: 50%;  
-        animation-name: roda;  
+        animation-name: roda;
+        animation-name: roda-encolhe;
         animation-duration: 2s;
         animation-iteration-count: infinite;
         animation-timing-function: linear; 
@@ -302,7 +304,8 @@ nav a:hover{
         background-repeat: no-repeat;
         background-size: 100% 100%;
         border-radius: 50%;  
-        animation-name: roda;  
+        animation-name: roda;
+        animation-name: roda-encolhe;
         animation-duration: 2s;
         animation-iteration-count: infinite;
         animation-timing-function: linear; 
@@ -317,7 +320,8 @@ nav a:hover{
         background-repeat: no-repeat;
         background-size: 100% 100%;
         border-radius: 50%;  
-        animation-name: roda;  
+        animation-name: roda;
+        animation-name: roda-encolhe;
         animation-duration: 2s;
         animation-iteration-count: infinite;
         animation-timing-function: linear; 
@@ -376,8 +380,8 @@ nav a:hover{
       
      
       @keyframes roda-encolhe {
-        0% {transform: rotate(0deg); width: 200px;}
-        50% {transform: rotate(180deg);  width: 100px;}
-        100% {transform: rotate(360deg);  width: 200px;}
+        0% {transform: rotate(0deg); width: 400px;}
+        50% {transform: rotate(180deg);  width: 200px;}
+        100% {transform: rotate(360deg);  width: 400px;}
       }
 
