@@ -12,13 +12,155 @@
         color:black;
     }
 
-    .fotos{
-        font-size: 1rem;
-        text-align:left;
+    .fotos
+        {
+            display: grid;
+            width: 100vw;
+            height: 100vh;      
+            grid-template-areas:    
+                                'foto1 foto2 foto3'
+                                'foto4 foto5 foto6 '
+                                'foto7 foto8 foto9'
+                                'foto10 foto8 foto9'
+                                'foto10 foto11 foto12'
+                                'foto10 foto11 foto12'
+                                'foto10 foto11 foto12';
+                                        
+            gap: 7.5px;
+            background-color: black;
+            padding: 5px; 
+        }
+        
+    .foto1{
+        grid-area: foto1;
+        background-image: url("../lab5/images/images Unsplash/christopher-lee-B0PvO51oBdM-unsplash.jpg");
+        min-width:100%;
+        height:100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .foto2{
+        grid-area: foto2;
+        background-image: url("../lab5/images/images Unsplash/christopher-lee-B7uMOLxiR8c-unsplash.jpg");
+        min-width:100%;
+        height:100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         
     }
 
+    .foto3{
+        grid-area: foto3;
+        background-image: url("../lab5/images/images Unsplash/christopher-lee-cJ_PMOnGGfM-unsplash.jpg");
+        min-width:100%;
+        height:100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .foto4{
+        grid-area: foto4;
+        opacity:0.7;
+        background-image: url("../lab5/images/images Unsplash//christopher-lee-ZaMyD-31snk-unsplash.jpg");
+        min-width:100%;
+        height:100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .foto5{
+        grid-area: foto5;
+        opacity:0.7;
+        background-image: url("../lab5/images/images Unsplash/christopher-lee-lhGvjcEnSkU-unsplash.jpg");
+        min-width:100%;
+        height:100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .foto6{
+        grid-area: foto6;
+        opacity:0.7;
+        background-image: url("../lab5/images/images Unsplash/christopher-lee-lPVPENOTmSs-unsplash.jpg");
+        min-width:100%;
+        height:100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .foto7{
+        grid-area: foto7;
+        opacity:0.7;
+        background-image: url("../lab5/images/images Unsplash/christopher-lee-OpnRMdy7Jzk-unsplash.jpg");
+        min-width:100%;
+        height:100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .foto8{
+        grid-area: foto8;
+        opacity:0.7;
+        background-image: url("../lab5/images/images Unsplash/christopher-lee-sjk9E6gL_yk-unsplash.jpg");
+        min-width:100%;
+        height:100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .foto9{
+        grid-area: foto9;
+        opacity:0.7;
+        background-image: url("../lab5/images/images Unsplash/christopher-lee-SWLOhz1S7yg-unsplash.jpg");
+        min-width:100%;
+        height:100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .foto10{
+        grid-area: foto10;
+        opacity:0.7;
+        background-image: url("../lab5/images/images Unsplash/christopher-lee-T4kj3qwOEus-unsplash.jpg");
+        min-width:100%;
+        height:100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .foto11{
+        grid-area: foto11;
+        opacity:0.7;
+        background-image: url("../lab5/images/images Unsplash/eberhard-grossgasteiger-SlSIGcDYHk4-unsplash.jpg");
+        min-width:100%;
+        height:100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .foto12{
+        grid-area: foto12;
+        opacity:0.7;
+        background-image: url("../lab5/images/images Unsplash/great-cocktails-rKQ5BkPXuik-unsplash.jpg");
+        min-width:100%;
+        height:100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
     
+
+    .fotos p{
+        color:orange;
+        opacity:0.7;
+        
+        text-align: start;
+        font-size: 18px;
+        font-style:bold;
+        padding: 2.5%;
+        background-color: rgb(255, 255, 255,0.4);
+        
+    }
 
 .title{
     
@@ -259,7 +401,7 @@ nav a:hover{
         
         
         gap: 20px;
-        background-color:whitesmoke;
+        background-color:white;
         padding: 10px;  
     }
 
@@ -360,6 +502,71 @@ nav a:hover{
         padding: 10px;
         }
       }
+   
+
+
+@media only screen and (max-width: 600px) {
+    .fotos { 
+        display: grid;
+    width: 100vw;
+    height: 100vh;      
+    grid-template-areas:    'foto1' 
+                            'foto2'  
+                            'foto3'
+                            'foto4'  
+                            'foto5'  
+                            'foto6'
+                            'foto7'  
+                            'foto8'  
+                            'foto9'
+                            'foto10'  
+                            'foto11'  
+                            'foto12';
+                            
+
+    gap: 20px;
+    background-color:white;
+    padding: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .fotos { 
+        display: grid;
+    width: 100vw;
+    height: 100vh;      
+    grid-template-areas:    'foto1'  'foto8'
+                            'foto2'  'foto9'
+                            'foto3'  'foto10'
+                            'foto4'  'foto11'
+                            'foto5'  'foto12'
+                            'foto6'  'foto12';
+                            
+                            
+    gap: 20px;
+    background-color:white;
+    padding: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 901px) {
+    .fotos { 
+        display: grid;
+    width: 100vw;
+    height: 100vh;      
+    grid-template-areas:    'foto1 foto2 foto3'
+                            'foto4 foto5 foto6 '
+                            'foto7 foto8 foto9'
+                            'foto10 foto8 foto9'
+                            'foto10 foto11 foto12'
+                            'foto10 foto11 foto12'
+                            'foto10 foto11 foto12';
+
+    gap: 7.5px;
+    background-color:white;
+    padding: 5px;
+    }
+  }
 
       .parallax {
         
